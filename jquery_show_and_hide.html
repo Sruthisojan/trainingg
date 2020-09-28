@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JQuery Show and Hide</title>
+  <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#show").click(function(){
+                $("#div").show("fast");
+            });
+            $("#hide").click(function(){
+                $("#div").hide(1000,"swing");
+            });
+            $("#toggle").click(function(){
+                $("#div").toggle("slow");
+            });
+        });
+    </script>
+    <style type="text/css">
+        #div{
+            border: 1px solid gray;
+            background-color: #EE6260;
+            font-size: 24pt;
+            padding-left: 10pt;
+            padding-right: 10pt;
+            height: 200px;
+            width: 300px;
+            text-align: center;
+            
+        }
+        button{
+            margin: 5pt 5pt 0 0;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>JQuery Show and Hide effects</h1>
+        <div id="div">Div Box</div>
+        <button id="show" style="background-color: #0daade; width: 100px; border: none; color: #fff; margin-right: 10px; border-radius: 10px;" type="button" class="btn btn-success">Show</button>
+        <button id="hide" style="background-color: #de410d; width: 100px; border: none; color: #fff; margin-right: 10px; border-radius: 10px;" type="button" class="btn btn-success">Hide</button>
+        <button id="toggle" style="background-color: #c1c724; width: 100px; border: none; color: #fff; margin-right: 10px; border-radius: 10px;" type="button" class="btn btn-success">Toggle</button>
+    </body>
+</html>
