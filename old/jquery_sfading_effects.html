@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JQuery Show and Hide</title>
+  <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#box1").fadeToggle();
+                 $("#box2").fadeToggle("slow");
+                 $("#box3").fadeToggle(3000);
+                 $("#box4").fadeToggle(1000);
+            });
+        });
+    </script>
+    <style>
+        button{background-color: crimson;color: white; height: 60px; border-radius: 5px;}
+    </style>
+    </head>
+    <body>
+        <h1>Fading Effects</h1>
+        <button>Click</button>
+        <div id="box1" style="width: 120px; height: 70px; background-color: #f01867"></div>
+        <div id="box2" style="width: 120px; height: 70px; background-color: #f26333"></div>
+        <div id="box3" style="width: 120px; height: 70px; background-color: #ce63f2"></div>
+        <div id="box4" style="width: 120px; height: 70px; background-color: #33c2f2"></div>
+    </body>
+</html>
+            

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html lang=en> 
+        <meta charset="utf-8"> 
+        <title>JQuery event handlers</title> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script>
+        $(document).ready(function() {
+            $('div').hover(
+                function(){
+                    $(this).css({"background-color":"red"});
+                },
+                function(){
+                    $(this).css({"background-color":"blue"});
+                }
+            )
+        
+            $('div').dblclick(
+            function() {
+                $(this).css({"background-color":"green"});
+            });
+            $('div').click(
+            function(){
+                $(this).css({"background-color":"purple"});
+            });
+         });
+        </script>
+        <style type="text/css">
+            .div{
+                width: 250px;
+                height: 180px;
+                margin: 10px;
+                padding: 20px;
+                background: #00FF00;
+                border: 1px solid black;
+                font-size: 16pt;
+                color: #fff;
+            }
+            button{
+                margin: 5pt 5pt 0 0;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Move mouse on the Square</p>
+        <div class="div">Click and Hover</div>
+    </body>
+</html>
